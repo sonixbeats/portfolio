@@ -1,0 +1,214 @@
+.skills-section .container .skill .bar-html {
+    position: relative;
+    margin-left: 20px;
+    width: 100%;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.skills-section .container .skill .bar-html::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    background-color: #db6c40;
+    border-radius: 20px;
+
+    animation: html 3.2s ease-in-out;
+
+}
+
+.skills-section .container .skill .css-bar {
+    position: relative;
+    margin-left: 51px;
+    width: 100%;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.skills-section .container .skill .css-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 100%;
+    background-color: #4090db;
+    border-radius: 20px;
+
+    animation: css 2.8s ease-in-out;
+}
+
+.skills-section .container .skill .js-bar {
+    position: relative;
+    margin-left: 80px;
+    width: 100%;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.skills-section .container .skill .js-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    background-color: #e6e94f;
+    border-radius: 20px;
+
+    animation: js 1s ease-in-out;
+}
+
+.skills-section .container .skill .php-bar {
+    position: relative;
+    margin-left: 50px;
+    width: 100%;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.skills-section .container .skill .php-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background-color: #9f4fe9;
+    border-radius: 20px;
+
+    animation: php 2s ease-in-out;
+
+}
+
+.skills-section .container .skill .sql-bar {
+    position: relative;
+    margin-left: 55px;
+    width: 100%;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.skills-section .container .skill .sql-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 37%;
+    height: 100%;
+    background-color: #e94f57;
+    border-radius: 20px;
+
+    animation:sql 2.4s ease-in-out;
+}
+
+.skills-section .container .skill .ps-bar {
+    position: relative;
+    margin-left: 40px;
+    width: 100%;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.skills-section .container .skill .ps-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 68%;
+    max-width: 68%;
+    height: 100%;
+    background-color: #1a3cd6;
+    border-radius: 20px;
+
+    animation: ps 3.5s ease-in-out;
+}
+
+@keyframes html {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes js {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 15%;
+    }
+}
+
+@keyframes php {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes sql {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 37%;
+    }
+}
+
+@keyframes ps {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 68%;
+    }
+}
+
+
+/* Trigger Section when hover */
+@media (prefers-reduced-motion: no-preference) {
+    .square-animation {
+      animation: wipe-enter 1s 1;
+    }
+}
+
+@keyframes wipe-enter {
+	0% {
+        transform: translateX(-100%);
+    }
+    
+	50% {
+        transform: translateX(0);
+    }
+}
+
+/* Path: Styles/Animation.css */
