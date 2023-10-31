@@ -390,7 +390,7 @@ header {
 .projects-section .photo-prj {
     display: none;
     position: absolute;
-    transform: translate(6%, -4.5%);
+    transform: translate(5.5%, -4.5%);
     z-index: 100;
     transition: all 0.3s ease;
 }
