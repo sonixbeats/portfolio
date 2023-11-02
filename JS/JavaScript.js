@@ -127,3 +127,10 @@ observer.observe(document.querySelector('.about-section'));
 observer.observe(document.querySelector('.skills-section'));
 observer.observe(document.querySelector('.projects-section'));
 observer.observe(document.querySelector('.contact-section'));
+
+//=======================================================
+
+function protect() {
+  alert("Hop hop hop ! Vous ne pouvez pas copier le contenu de mon site !");
+  return false;
+}
