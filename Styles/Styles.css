@@ -20,6 +20,7 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
+    overflow-x:hidden
 }
 
 ::selection {
