@@ -6,6 +6,10 @@
 
 @import url(/Styles/Animation.css);
 
+:root{
+    --primary-color: rgb(199, 73, 84);
+}
+
 .font {
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Space Grotesk', sans-serif;
@@ -20,12 +24,11 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
-    overflow-x:hidden
 }
 
 ::selection {
     color: #242424;
-    background: #ac4564;
+    background: #EC465A;
 }
 
 p,
@@ -50,7 +53,7 @@ h1,
 
 body {
     font-family: 'Unbounded', sans-serif;
-    background-color: rgb(35, 35, 35);
+    background-color: #0C0C0C;
 }
 
 body::-webkit-scrollbar {
@@ -60,8 +63,8 @@ body::-webkit-scrollbar {
 header {
     height: 100vh;
     width: 100vw;
-    background-image: url(../IMG/front.png), url(../IMG/mid.png), url(../IMG/Back.png);
-    background-size: 103%, 98%, 100%;
+    background-image: url(../IMG/Akeno-Front.png), url(../IMG/Akeno-Mid-Upper.png), url(../IMG/Akeno-Mid-Back.png);
+    background-size: 98%, 101%, 105%;
     background-position: center, center, center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -85,11 +88,12 @@ header {
     font-size: 1.1rem;
     color: #ffffff;
     transition: all 0.3s ease;
+    mix-blend-mode: difference;
 }
 
 .navbar li a:hover {
-    color: #ac4564;
-    text-shadow: #ac4564 0px 0px 10px;
+    color: var(--primary-color);
+    text-shadow: var(--primary-color) 0px 0px 10px;
     font-size: 1.2rem;
 }
 
@@ -109,8 +113,8 @@ header {
 
 
 .navbar .sm-icon:hover {
-    color: #ac4564;
-    filter: drop-shadow(#ac4564 0px 0px 10px);
+    color: var(--primary-color);
+    filter: drop-shadow(var(--primary-color) 0px 0px 10px);
     font-size: 2.2em;
 }
 
@@ -140,30 +144,33 @@ header {
     font-family: 'Dela Gothic One', sans-serif;
     position: absolute;
     top: 35%;
-    left: 10%;
+    left: 77%;
     color: #ffffff00;
     font-size: 100px;
     text-align: center;
     -webkit-text-stroke-width: 0.1px;
     -webkit-text-stroke-color: #ffffff;
+    mix-blend-mode: difference;
 }
 
 .subtitle {
     font-family: 'Dela Gothic One', sans-serif;
+    text-align: end;
     position: absolute;
     top: 50%;
-    left: 10%;
+    left: 60%;
     color: rgba(255, 255, 255, 0.8);
     font-size: 50px;
     font-weight: 400;
     letter-spacing: 7px;
     text-shadow: #ffffff 0px 0px 10px;
+    mix-blend-mode: difference;
 }
 
 .about-section {
     width: 100vw;
     height: 100vh;
-    background-color: rgb(35, 35, 35);
+    background-color: #131313;
 }
 
 .about-section .container {
@@ -171,7 +178,7 @@ header {
     margin: 165px 0;
     width: 45%;
     float: right;
-    background-color: rgb(48, 48, 48);
+    background-color: rgb(39, 39, 39);
     padding: 150px;
     border-radius: 20px 0 0 20px;
 }
@@ -201,7 +208,7 @@ header {
 }
 
 .about-section p span {
-    color: #ac4564;
+    color: var(--primary-color);
     font-weight: bold;
     font-size: 1.2em;
 
@@ -221,7 +228,7 @@ header {
 .skills-section {
     width: 100vw;
     height: 100vh;
-    background-color: rgb(31, 31, 31);
+    background-color: #181818;
 }
 
 .skills-section .container {
@@ -229,7 +236,7 @@ header {
     margin: 150px 0;
     width: 45%;
     float: left;
-    background-color: rgb(48, 48, 48);
+    background-color: rgb(39, 39, 39);
     padding: 100px;
     border-radius: 0 20px 20px 0;
     color: #fff;
@@ -266,7 +273,7 @@ header {
 .projects-section {
     width: 100vw;
     height: 100vh;
-    background-color: rgb(35, 35, 35);
+    background-color: #131313;
 }
 
 .projects-section .container {
@@ -335,8 +342,8 @@ header {
 }
 
 .projects-section .container .project .project-info .sm-icon:hover {
-    color: #ac4564;
-    filter: drop-shadow(#ac4564 0px 0px 10px);
+    color: var(--primary-color);
+    filter: drop-shadow(var(--primary-color) 0px 0px 10px);
     font-size: 3.2em;
 }
 
@@ -412,13 +419,13 @@ header {
 .contact-section {
     width: 100vw;
     height: 100vh;
-    background-color: rgb(31, 31, 31);
+    background-color: #181818;
 }
 
 .contact-section .container-contact {
     position: absolute;
     width: 45%;
-    background-color: rgb(48, 48, 48);
+    background-color: rgb(39, 39, 39);
     padding: 140px;
     border-radius: 20px 0 0 20px;
     transform: translate(0%, 55%);
@@ -462,9 +469,9 @@ header {
 }
 
 .btn-contact-me:hover {
-    background-color: #ac4564;
+    background-color: var(--primary-color);
     color: #ffffff;
-    filter: drop-shadow(#ac4564 0px 0px 10px);
+    filter: drop-shadow(var(--primary-color) 0px 0px 10px);
     scale: 1.1;
 }
 
@@ -481,8 +488,8 @@ header {
 }
 
 .contact-section .container-contact .social-media .sm-icon:hover {
-    color: #ac4564;
-    filter: drop-shadow(#ac4564 0px 0px 10px);
+    color: var(--primary-color);
+    filter: drop-shadow(var(--primary-color) 0px 0px 10px);
     scale: 1.1;
 }
 
