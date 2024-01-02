@@ -88,7 +88,6 @@ header {
     font-size: 1.1rem;
     color: #ffffff;
     transition: all 0.3s ease;
-    mix-blend-mode: difference;
 }
 
 .navbar li a:hover {
@@ -101,6 +100,7 @@ header {
     color: #ffffff;
     font-size: 2em;
     font-weight: 900;
+    mix-blend-mode: difference;
 }
 
 .navbar .sm-icon {
@@ -138,6 +138,10 @@ header {
     top: 50px;
     right: 50px;
     width: 45px;
+}
+
+.message{
+    display: none;
 }
 
 .title {
@@ -774,6 +778,38 @@ span[class^="dot-"] {
 }
 
 @media screen and (max-width: 900px) {
+
+    .CenterdScreenIcon {
+        position: fixed;
+        width: 350px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -80%);
+        z-index: 1002;
+        transition: all 0.6s ease-in;
+    }
+
+    .Loader_text {
+        position: fixed;
+        width: 300px;
+        top: 60%;
+        left: 42%;
+        transform: translate(-35%, -50%);
+        transition: all 0.6s ease-in;
+        color: #ffffff;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        text-align: center;
+        font-weight: 200;
+        font-family: 'Dela Gothic One', cursive;
+        transition: 0.6s;
+        z-index: 1003;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        text-shadow: none;
+    }
+
     .navbar {
         padding: 0;
     }
@@ -796,7 +832,6 @@ span[class^="dot-"] {
         top: 0;
         left: 0;
         position: absolute;
-        backdrop-filter: blur(10px);
         width: 100%;
         height: 100vh;
         display: flex;
@@ -825,6 +860,222 @@ span[class^="dot-"] {
     .navbar .nav-links ul li {
         margin: 25px 0;
         font-size: 1.2rem;
+    }
+
+    .navbar .nav-links ul li .active {
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+    }
+
+    .navbar .nav-links ul li a {
+        font-size: 1.2rem;
+        color: #ffffff;
+        transition: all 0.3s ease;
+        mix-blend-mode: difference;
+    }
+
+    .navbar .nav-links ul li a:hover {
+        color: var(--primary-color);
+        text-shadow: var(--primary-color) 0px 0px 10px;
+        font-size: 1.3rem;
+    }
+
+    .title {
+        font-family: 'Dela Gothic One', sans-serif;
+        position: absolute;
+        top: 35%;
+        left: 23%;
+        color: #ffffff00;
+        font-size: 100px;
+        text-align: center;
+        -webkit-text-stroke-width: 0.1px;
+        -webkit-text-stroke-color: #ffffff;
+        mix-blend-mode: difference;
+    }
+
+    .subtitle {
+        font-family: 'Dela Gothic One', sans-serif;
+        text-align: end;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 7px;
+        mix-blend-mode: difference;
+    }
+
+    header {
+        height: 100vh;
+        width: 100vw;
+        background-image: url(../IMG/Akeno-Front.png), url(../IMG/Akeno-Mid-Upper.png), url(../IMG/Akeno-Mid-Back.png);
+        background-size: 350%, 310%, 360%;
+        background-position: center, center, center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+
+    .about-section .container {
+        position: relative;
+        margin: 88px 0;
+        width: 50%;
+        float: right;
+        background-color: rgb(39, 39, 39);
+        padding: 150px;
+        border-radius: 20px 0 0 20px;
+    }
+
+    .about-section .container h1 {
+        font-family: 'Dela Gothic One', sans-serif;
+        color: #ffffff00;
+        font-size: 2em;
+        font-weight: 900;
+        margin-bottom: 50px;
+        -webkit-text-stroke-width: 0.1px;
+        -webkit-text-stroke-color: rgb(255, 255, 255);
+    }
+
+    .about-section .container p {
+        color: #ffffff;
+        font-size: 1em;
+        font-weight: 400;
+        line-height: 1.5em;
+    }
+
+
+    .skills-section .container {
+        position: relative;
+        margin: 125px 0;
+        width: 50%;
+        float: left;
+        background-color: rgb(39, 39, 39);
+        padding: 100px;
+        border-radius: 0 20px 20px 0;
+        color: #fff;
+    }
+
+    .skills-section .container h1 {
+        font-family: 'Dela Gothic One', sans-serif;
+        color: #ffffff00;
+        font-size: 2em;
+        font-weight: 900;
+        margin-bottom: 50px;
+        -webkit-text-stroke-width: 0.1px;
+        -webkit-text-stroke-color: rgb(255, 255, 255);
+    }
+
+    .skills-section .container .sm-icon {
+        font-size: 3.5em;
+        color: #ffffff;
+        margin-right: 10px;
+    }
+
+    .skills-section .container .skill {
+        display: flex;
+        align-items: center;
+    }
+
+    .skills-section .container .bar-html {
+        display: none;
+    }
+    .skills-section .container .css-bar {
+        display: none;
+    }
+    .skills-section .container .js-bar {
+        display: none;
+    }
+    .skills-section .container .php-bar {
+        display: none;
+    }
+    .skills-section .container .sql-bar {
+        display: none;
+    }
+
+    .skills-section .container .ps-bar {
+        display: none;
+    }
+
+    .skills-section .image {
+        position: absolute;
+        width: 50%;
+        right: -3%;
+        float: left;
+    }
+
+    .projects-section .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 100px;
+    }
+
+    .projects-section .container h1 {
+        font-family: 'Dela Gothic One', sans-serif;
+        color: #ffffff00;
+        font-size: 2em;
+        font-weight: 900;
+        margin-bottom: 20px;
+        -webkit-text-stroke-width: 0.1px;
+        -webkit-text-stroke-color: rgb(255, 255, 255);
+        margin-right: 60px;
+    }
+
+    .projects-section .container .message {
+        display: block;
+        position: absolute;
+        transform: translate(0%, 90%);
+        background-color: rgba(255, 168, 168, 0.8);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 20px;
+        width: 50%;        
+    }
+
+    .projects-section .container .project {
+        display: none;
+    }
+
+    .contact-section .container-contact {
+        position: absolute;
+        width: 40%;
+        background-color: rgb(39, 39, 39);
+        padding: 140px;
+        border-radius: 20px 0 0 20px;
+        transform: translate(0%, 55%);
+        right: 0;
+        margin: -75px 0px;
+    }
+
+    .contact-section .container-contact h1 {
+        font-family: 'Dela Gothic One', sans-serif;
+        color: #ffffff00;
+        font-size: 2em;
+        font-weight: 900;
+        margin-bottom: 50px;
+        -webkit-text-stroke-width: 0.1px;
+        -webkit-text-stroke-color: rgb(255, 255, 255);
+
+        position: absolute;
+        transform: translate(0%, -120%);
+    }
+
+    .contact-section .container-contact p {
+        color: #ffffff;
+        font-size: 1em;
+        font-weight: 400;
+        line-height: 1.5em;
+    }
+
+    .contact-section .container-contact .social-media {
+        position: absolute;
+        transform: translate(0%, 25%);
+    }
+
+    .contact-section .container-contact .social-media .sm-icon {
+        font-size: 3em;
+        color: #ffffff;
+        margin-right: 10px;
     }
 }
 
