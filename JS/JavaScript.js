@@ -129,3 +129,9 @@ observer.observe(document.querySelector('.projects-section'));
 observer.observe(document.querySelector('.contact-section'));
 
 //=======================================================
+// On click add class Zoomed to all img
+// const IMG = document.querySelector(".IMG-BASE");
+
+// IMG.addEventListener("click", () => {
+//   IMG.classList.toggle("Zoomed");
+// }); 
