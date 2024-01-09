@@ -13,7 +13,6 @@ burgerBtn.addEventListener("click", () => {
 });
 
 //=======================================================
-
 // When it scrolls down under 800px, reduce the size of the navbar.
 window.onscroll = function () {
   scrollFunction();
@@ -33,7 +32,6 @@ function scrollFunction() {
 }
 
 //=======================================================
-
 // Get the navbar and the burger button elements
 const togglebtn = document.querySelector(".btn");
 const prod = document.querySelector(".music-prj");
@@ -75,7 +73,6 @@ BTN_PHOTO.addEventListener("click", () => {
 });
 
 //=======================================================
-
 // Loeader Page
 var loader = document.getElementById("load");
 
@@ -84,7 +81,6 @@ window.addEventListener("load", function () {
 });
 
 //=======================================================
-
 // Parallax effect on the home page
 (function () {
   document.addEventListener("mousemove", parallax);
@@ -109,8 +105,35 @@ window.addEventListener("load", function () {
   }
 })();
 
-//=======================================================
+//=========================================================
+// // Parallax effect on the home page
+// (function () {
+//   document.addEventListener("scroll", parallax);
+//   const elem = document.querySelector("#home");
 
+//   function parallax() {
+//     let scrollPosition = window.pageYOffset;
+//     elem.style.backgroundPositionY = -scrollPosition * 0.5 + "px";
+//   }
+// })();
+
+//=======================================================
+// Parallax effect on the home page
+// (function () {
+//   document.addEventListener("scroll", parallax);
+//   const elem = document.querySelector("#home");
+
+//   function parallax() {
+//     let scrollPosition = window.pageYOffset;
+//     let depth1 = `${50 - scrollPosition * -0.1}%`;
+//     let depth2 = `${50 - scrollPosition * 0.2}%`;
+//     let depth3 = `${50 - scrollPosition * 0.3}%`;
+//     let x = `${depth3}, ${depth2}, ${depth1}`;
+//     elem.style.backgroundPosition = x;
+//   }
+// })();
+
+//=======================================================
 const observer = new IntersectionObserver(entries => {
   // Loop over the entries
   entries.forEach(entry => {
@@ -129,9 +152,3 @@ observer.observe(document.querySelector('.projects-section'));
 observer.observe(document.querySelector('.contact-section'));
 
 //=======================================================
-// On click add class Zoomed to all img
-// const IMG = document.querySelector(".IMG-BASE");
-
-// IMG.addEventListener("click", () => {
-//   IMG.classList.toggle("Zoomed");
-// }); 
